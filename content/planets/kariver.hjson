@@ -1,0 +1,80 @@
+localizedName: Kariver
+generator: PlanetGenerator
+parent: sun
+accessible: true
+alwaysUnlocked: false
+allowLaunchLoadout: false
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowSectorInvasion: false
+allowWaveSimulation: false
+atmosphereColor: FFDB8B
+atmosphereRadIn: 0
+atmosphereRadOut: 0.1
+bloom: true
+clearSectorOnLose: true
+defaultCore: core-invasion
+drawOrbit: true
+iconColor: FFF34F
+landCloudColor: FFF34F
+orbitTime: 1618
+prebuildBase: true
+radius: 1.5
+sectorSize: 2
+startSector: 22
+updateLighting: true
+itemWhitelist: [
+	nanometal 
+	electrocell 
+	w-c
+	d-c
+	t-m
+ l-tank
+]
+mesh: [
+{
+	type: NoiseMesh
+	seed: 19
+	divisions: 5
+	color1: 79443B
+	color2: 704241
+ color3: b39f7a
+	radius: 1
+	octaves: 16
+	persistence: 0.8
+	scale: 3
+	mag: 0.7
+}
+{
+ type: NoiseMesh
+ seed: 532637
+ color1: FFF34F
+ color2: FFFFF0
+ divisions: 4
+ radius: 0.8
+ octaves: 3
+ persistence: 1
+ scl: 0.1
+ mag: 3
+}
+]
+cloudMesh: [
+{
+	type: HexSkyMesh
+	seed: 33
+	speed: 8
+	divisions: 5
+ color: F36321
+	radius: 0
+	thresh: 0.4
+}
+{
+type: HexSkyMesh
+	seed: 21
+	speed: 8
+	divisions: 5
+ color: C2401A
+	radius: 0
+	thresh: 0.2
+}
+]

@@ -1,0 +1,16 @@
+{
+  "name": "ElectroCell",
+  "cost": 2,
+  "hardness": 2,
+  "explosiveness": 14,
+  "charge": 13,
+  "color": "1f1f2b",
+  "frames": 6,
+  "transitionFrames": 6,
+  "research": {
+    "parent": "nanometal",
+    "requirements": [
+      "nanometal/50"
+    ]
+  }
+}

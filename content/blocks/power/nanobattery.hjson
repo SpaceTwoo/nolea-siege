@@ -1,0 +1,17 @@
+type: Battery
+health: 580
+size: 1
+hasPower: true
+consumesPower: true
+outputsPower: true
+consumes: {
+  powerBuffered: 6000
+}
+requirements: [
+  nanometal/20
+  electrocell/30
+]
+emptyLightColor: 565666
+requiresWater: true
+category: power
+research: energy-bridge

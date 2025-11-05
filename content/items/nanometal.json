@@ -1,0 +1,11 @@
+{
+   	"name": "Nanometal",
+    "explosiveness": 0,
+    "flammability": 0,
+    "radioactivity": 0.1,
+    "charge": 0.1,
+    "cost": 1.8,
+    "hardness": 4,
+    "color": "5b5f6b",
+    "research": "core-invasion"
+}

@@ -1,0 +1,66 @@
+type: mech
+speed: 0.5
+drag: 0.4
+hitSize: 18
+rotateSpeed: 3.4
+health: 4350
+armor: 7
+mechFrontSway: 0.5
+lightColor: FFFAFA
+outlineColor: 000907
+weapons: [
+  {
+    name: nano-buster
+    top: false
+    recoil: 2
+    inaccuracy: 10
+    shoot: {
+      type: ShootSpread
+      shots: 10
+      spread: 0
+    }
+    x: 8.75
+    y: 0.75
+    shootY: 8
+    reload:45
+    shootSound:rooker
+    shoot:{
+    type:ShootSpread
+    shots:2
+    spread:6
+   }
+    bullet:{
+    type:ShrapnelBulletType
+    length:70
+    width:3
+    damage:80
+    lifetime:25
+    serrations:4
+    serrationWidth:3
+    serrationSpacing:22
+    serrationSpaceOffset:130
+    serrationLenScl:3
+    fromColor:d1efff
+    pierceBuilding:true
+    toColor:FFFAFA
+    }
+  }
+]
+
+abilities: [
+  {
+    type: ForceFieldAbility
+    radius: 35
+    regen: 1.1
+    max: 1590
+    cooldown: 300
+  }
+]
+
+research: {
+  parent: knifer
+  requirements: [
+    nanometal/100
+  ]
+  objectives: [t1-guard]
+}

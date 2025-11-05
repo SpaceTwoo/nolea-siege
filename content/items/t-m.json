@@ -1,0 +1,14 @@
+{
+  "name": "Trichematic Mechanism",
+  "cost": 2,
+  "hardness": 4,
+  "explosiveness": 7,
+  "charge": 10,
+  "color": "1f1c6c",
+  "research": {
+    "parent": "nanometal",
+    "requirements": [
+      "nanometal/150"
+    ]
+  }
+}

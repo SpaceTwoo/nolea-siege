@@ -1,0 +1,6 @@
+type: StaticWall
+name: Mechanisms
+description: "Contains electrocells."
+attributes: {
+  electrocell: 1
+}

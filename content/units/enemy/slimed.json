@@ -1,0 +1,61 @@
+{
+  "type": "mech",
+  "research": "knifer"
+  "researchCost": [
+    "nanometal/30"
+  ],
+  "hitSize": 15,
+  "squareShape": true,
+  "omniMovement": true,
+  "rotateSpeed": 1.8,
+  "speed": 1.0,
+  "flying": false,
+  "outlineColor": 000907,
+  "health": 2000,
+  "armor": 3,
+  "range": 125,
+  "abilities": [
+		{
+			"type": "LiquidExplodeAbility",
+			"liquid": "goo",
+			"amount": 20,
+			"radScale": 2.5
+		}
+	],
+  "weapons": [
+      {
+      "name": "slimed-canon",
+        "mirror": false,
+        "x": 0,
+        "y": 0,
+        "rotate": true,
+        "rotateSpeed": 5,
+        "reload": 30,
+        "recoil": 3,
+        "shootSound": "bang",
+        "bullet": {
+        "type": "basicBulletType",
+        "shootEffect": "shootBig2",
+        "lifetime": 60,
+        "damage": 145,
+        "speed": 4,
+        "status": "glued",
+        "statusDuration": 50,
+        "color": d24ada,
+        "width": 12,
+        "height": 16,
+        "shootEffect": {
+        "type": "ParticleEffect",
+        "lifetime": 20,
+        "cone": 5,
+        "colorFrom": d24ada,
+        "colorTo": dffada,
+        "length": 40,
+        "particles": 10,
+         }
+         }
+      }
+    ]
+    }
+     
+    

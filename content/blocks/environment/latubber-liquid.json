@@ -1,0 +1,22 @@
+{
+  "type": "Floor",
+  "description": "A puddle of acid liquid. Beware!",
+  "status": "melting",
+  "statusDuration": 100,
+  "speedMultiplier": 0.4,
+  "variants": 0,
+  "liquidDrop": "latubber",
+  "liquidMultiplier": 1.3,
+  "isLiquid": true,
+  "cacheLayer": "water",
+  "attributes": {
+    "water": -1
+  },
+  "emitLight": true,
+  "lightRadius": 8,
+  "lightColor": "ffac32",
+  "albedo": 0.9,
+  "shallow": false,
+  "supportsOverlay": true,
+  "placeableOn": true
+}

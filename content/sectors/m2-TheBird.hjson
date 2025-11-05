@@ -1,0 +1,14 @@
+      captureWave: 16
+planet: aserie
+sector: 35
+difficulty: 2
+research: {
+requiresUnlock: false
+  parent: m1-TheInvasion
+  objectives: [
+    {
+      type: SectorComplete
+      preset: m1-TheInvasion
+    }
+  ]
+}

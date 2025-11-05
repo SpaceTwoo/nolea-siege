@@ -1,0 +1,63 @@
+generator: SerpuloPlanetGenerator
+parent: erekir
+iconColor: 424a62
+orbitRadius: 60
+hasAtmosphere: true
+updateLighting: false
+atmosphereRadIn: 0
+atmosphereRadOut: 0.3
+atmosphereColor: 909eaa
+drawOrbit: true
+
+
+accessible: true
+alwaysUnlocked: true
+defaultCore: "core-invasion"
+sectorSeed: 2
+startSector: 15
+sectorSize: 2
+launchCapacityMultiplier: 0.5
+allowWaves: true
+
+
+clearSectorOnLose: true
+allowSectorInvasion: true
+allowLaunchToNumbered: false
+	
+cloudMesh: {
+    type: 
+    planet: aserie
+    seed: 2
+    speed: 3
+    radius: 0.15
+    divisions: 2
+    color1: 202441
+    color2: 424a41
+    octaves: 3
+    persistence: 1
+    scl: 4
+    thresh: 0.1
+}
+	
+mesh: {
+    type: NoiseMesh
+    planet: aserie
+    seed: 422625
+    color1: 0a0f2d
+    color2: 03030a
+    divisions: 3
+    radius: 0.8
+    octaves: 4
+    persistence: 1
+    scl: 0.75
+    mag: 1.2
+}
+	
+itemWhitelist: [
+    "nanometal"
+    "electrocell"
+    "w-c"
+    "d-c"
+    "t-m"
+    "l-tank"
+]

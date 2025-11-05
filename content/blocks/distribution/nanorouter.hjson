@@ -1,0 +1,15 @@
+type: Router
+name: NanoRouter
+description: Distribute items evenly.
+category: distribution
+size: 1
+health: 200
+speed: 14
+squareSprite: true
+requirements: [
+  nanometal/3
+]
+research: transfer-point
+researchCost: [
+  nanometal/12
+]

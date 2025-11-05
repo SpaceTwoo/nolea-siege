@@ -1,0 +1,30 @@
+type: MendProjector
+size: 2
+health: 4000
+category: defense
+research: {
+parent: t1-guard
+}
+researchCost: [
+nanometal/50
+]
+reload: 25
+healPercent: 0.3
+group: walls
+range: 5
+baseColor: FFFAFA
+phaseColor: FFFAFA
+phaseBoost: 0
+phaseRangeBoost: 0
+useTime: 300
+canOverdrive: false
+consumes: {
+liquid: {
+liquid: nanofluid
+amount: 0.2
+}
+}
+requirements: [
+nanometal/150
+]
+envDisabled: 16

@@ -1,0 +1,56 @@
+type: AttributeCrafter
+size: 4
+updateEffect: ventSteam
+craftTime: 100
+baseEfficiency: 1
+hasLiquids: true
+attribute: heat
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawLiquidTile
+drawLiquid: latubber
+}
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+suffix: -rotator
+rotateSpeed: 8
+}
+{
+type: DrawRegion
+suffix: -top
+}
+]
+}
+
+consumes: {
+  power: 3.8
+}  
+requirements: [
+nanometal/200
+electrocell/25
+]
+category: liquid
+research: {
+   parent: nanopump
+   objectives: [
+      nanopump
+      {
+         type: SectorComplete
+         preset: m3-TheProduction
+      }
+   ]
+  researchCost: [
+  nanometal/300
+  electrocell/60
+]
+}
+outputLiquid: latubber/0.4

@@ -1,0 +1,11 @@
+{
+  "cost": 1,
+  "hardness": 6,
+  "color": "F00C5B",
+  "research": {
+    "parent": "nanometal",
+    "requirements": [
+      "nanometal/90"
+    ]
+  }
+}

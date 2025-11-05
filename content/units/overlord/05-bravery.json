@@ -1,0 +1,202 @@
+{
+	"type":"mech",
+	"hitSize": 26,
+	"canDrown":false,
+	"armor": 4,
+	"speed":0.29,
+	"rotateSpeed": 2.25,
+	"baseRotateSpeed":2.0,
+	"health": 34000,
+ "outlineColor": 000907,
+	"mechStepParticles":true,
+	"mechFrontSway":0.98,
+	"mechSideSway":0.4,
+	"immunities":["burning"],
+	 "research": {
+  "parent": 07-ceremony
+   "objectives": [
+      "t2-rupture"
+      {
+         type: OnSector
+         preset: m4-Suppression
+      }
+   ]
+  },
+	"abilities": [
+		{
+			"type": "LiquidExplodeAbility",
+			"liquid": "nanofluid",
+			"amount": 30,
+			"radScale": 2
+		},
+ {
+  type: ShieldArcAbility
+  "region": "nul-05-bravery-shield",
+  "radius": 52.5,
+  "angle": 54.5,
+  "width": 10.5,
+   "y": -7,
+ 
+   "cooldown": 1500,
+   "regen": 2.2,
+   "max": 3000
+ }
+	],
+	"weapons": [
+		{
+			"name": "endurance",
+			"x": -13,
+			"reload": 6.66,
+			"shootX": -0.75,
+			"shootY": 15,
+			"mirror": false,
+			"recoil": 0.5,
+			"inaccuracy": 13,
+			"shootSound":"missile",
+			"top": true,
+			"shootWarmupSpeed":0.6,
+			"minWarmup":0.9,
+			"shake": 0.30,
+			"velocityRnd":0.1,
+			"bullet": {
+				"type": "ArtilleryBulletType",
+				"sprite":"nul-agony",
+				"height": 23,
+				"width": 11,
+				"frontColor": "f8ad42",
+				"backColor": "FFE9AD",
+				"spin": 18,
+				"drag":0.017,
+				"lifetime": 33,
+				"speed": 10,
+				"ammoMultiplier": 10,
+				"splashDamageRadius": 22,
+				"splashDamage": 40,
+				"incendAmount": 1,
+				"incendSpread": 8,
+				"incendChance": 0.4,
+				"absorbable": true,
+				"hitSound":"explosion",
+				"shootEffect": "shootPyraFlame",
+				"hitEffect": "flakExplosionBig",
+				"despawnEffect": "none",
+				"statusDuration": 400,
+				"status": "burning"
+			},
+			"parts": [
+				{
+					"type": "RegionPart",
+					"mirror": false,
+					"y":-8,
+					"suffix": "-open",
+					"under": true,
+					"moveY": 10,
+					"progress": "warmup"
+				},
+				{
+					"type": "RegionPart",
+					"mirror": false,
+					"suffix": "-warn",
+					"under": true,
+					"moveY": -10,
+					"progress": "warmup"
+				},
+				{
+					"type": "RegionPart",
+					"mirror": false,
+					"y":-8,
+					"suffix": "-open",
+					"under": true,
+					"moveY": 10,
+					"progress": "warmup"
+				}
+			]
+		},
+		{
+			"name": "cruelty",
+			"x":14,
+			"shootY": 9,
+			"mirror": false,
+			"top": false,
+			"rotate": true,
+			"rotateSpeed": 1,
+			"rotationLimit": 13,
+			"shootSound": "gassy",
+			"cooldownTime": 300,
+			"heatColor":"FFE9AD",
+				"bullet": {
+       "type": "SapBulletType",
+       "sapStrength": 0.59,
+       "length": 80,
+       "damage": 44,
+       "shootEffect": "shootSmall",
+       "hitColor": "FFE9AD",
+       "sprite": "nul-agony",
+       "despawnEffect": "none",
+       "width": 0.55,
+       "lifetime": 35,
+       "knockback": -1.74
+      }
+      }
+      {
+      "name": "endurance-open",
+      "x": 1,
+      "y": 0,
+      "reload": 7,
+      "top": true,
+      "mirror": false
+      "alternate": true,
+      "shootY": 3,
+      "shoot": {
+        "type": "shootPattern",
+        "shotDelay": 4,
+        "shots": 2
+      },
+      "recoil": 1.5,
+      "rotate": false,
+      "inaccuracy": 7,
+      "shootSound": "flame",
+      "shootCone": 18,
+      "bullet": {
+        "type": "BasicBulletType",
+        "collidesAir": true,
+        "speed": 5,
+        "damage": 15,
+        "width": 0.1,
+        "height": 0.1,
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 30,
+          "sizeFrom": 5,
+          "sizeTo": 0,
+          "length": 80,
+          "lifetime": 20,
+          "interp": "circleOut",
+          "lightColor": "ff7048",
+          "colorFrom": "FFDCD8FF",
+          "colorTo": "ff7048",
+          "cone": 10
+        },
+        "smokeEffect": "none",
+        "lifetime": 8,
+        "despawnEffect": "none",
+        "hittable": false,
+        "reflectable": false,
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 5,
+          "lifetime": 60,
+          "interp": "circleOut",
+          "length": 50,
+          "cone": -30,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "lightColor": "ff7048",
+          "colorFrom": "ffcea0",
+          "colorTo": "ff7048"
+        },
+       }
+     }
+	 ]
+}

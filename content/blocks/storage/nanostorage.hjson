@@ -1,0 +1,11 @@
+type: StorageBlock
+squareSprite: true
+size: 2
+health: 2000
+armor: 2
+itemCapacity: 200
+category: effect
+research: core-ground
+requirements: [
+  nanometal/250
+]

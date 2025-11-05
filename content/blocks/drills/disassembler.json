@@ -1,0 +1,22 @@
+{
+  "type": "WallCrafter",
+  "name": "Disassembler",
+  "description": "mines electrocells.",
+  "size": 2,
+  "health": 700,
+  "hasPower": false,
+  "category": "production",
+  "research": "nanodrill",
+  "requirements": [
+    "nanometal/20"
+  ],
+  "drillTime": 80,
+  "attribute": "electrocell",
+  "output": "electrocell",
+  "fogRadius": 1,
+  "researchCost": [
+    "nanometal/25"
+  ],
+  "ambientSound": "drill",
+  "ambientSoundVolume": 0.06
+}

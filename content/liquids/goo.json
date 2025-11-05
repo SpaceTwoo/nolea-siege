@@ -1,0 +1,10 @@
+{
+  "name": "Goo",
+  "temperature": -2,
+  "viscosity": 0.9,
+  "gas": false,
+  "effect": "glued",
+  "color": "d24ada",
+  "coolant": false,
+  "research": "latubber"
+}

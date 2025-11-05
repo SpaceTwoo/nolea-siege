@@ -1,0 +1,7 @@
+captureWave: 10
+sector: 15
+planet: aserie
+research: {
+  parent: core-invasion
+}
+difficulty: 1

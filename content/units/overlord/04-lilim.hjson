@@ -1,0 +1,120 @@
+{
+type: payload
+payloadCapacity: 50
+flying: true
+research: {
+   parent: knifer
+   objectives: [
+      phantom
+      {
+         type: OnSector
+         preset: m2-TheBird
+      }
+   ]
+ }
+outlineColor: 000907
+engineSize: 0
+lowAltitude: true
+health: 12500
+armor: 6
+hitSize: 23
+range: 240
+speed: 0.5
+strafePenalty: 1
+weapons: [
+  {
+    x: 8
+    y: -5
+    reload: 180
+    mirror: true
+    rotate: false
+    baseRotation: 90
+    alternate: false
+    shootCone: 360
+    ignoreRotation: true
+    shootSound: mediumCannon
+    bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: nul-feather
+    }
+    }
+   {
+   name: plasmoney
+   x: 0
+   y: 0
+   mirror: false
+   top: true
+   reload: 125
+   recoil: 0
+   shootSound: blaster
+   bullet: {
+    width: 20
+    height: 20
+    sprite: circle-bullet
+    speed: 4
+    lifetime: 42
+    damage: 200
+    splashDamage: 100
+    splashDamageRadius: 50
+    shrinkX: 0
+    shrinkY: 0
+    backColor: 55A9E5
+    frontColor: ffffff
+    knockback: 4
+    status: glued
+    statusDuration: 15
+    hitColor: 36B6FF
+    hitEffect: {
+         type: ExplosionEffect
+         waveRad: 50
+         waveStroke: 3
+         waveColor: 36B6FF
+         waveLife: 25
+         sparks: 10
+         sparkRad: 40
+         sparkColor: 36B6FF
+         sparkStroke: 3
+         sparkLen: 6
+         smokes: 8
+         smokeColor: 36B6FF
+         smokeRad: 40
+         smokeSize: 6
+       }
+        despawnEffect: {
+          type: ExplosionEffect
+          waveRad: 50
+          waveStroke: 3
+          waveColor: 36B6FF
+          waveLife: 25
+          sparks: 10
+          sparkRad: 40
+          sparkColor: 36B6FF
+          sparkStroke: 3
+          sparkLen: 6
+          smokes: 8
+          smokeColor: 36B6FF
+          smokeRad: 40
+          smokeSize: 6
+         }
+       }
+     }
+]
+abilities: [
+  {
+      type: SuppressionFieldAbility
+      range: 180
+      reload: 60
+     y: 1
+      color: 36B6FF
+      orbRadius: 3
+      orbMidScl: 0.33
+      particles: 10
+      particleColor: 36B6FF
+      particleLife: 50,
+     particleLen: -8,
+     particleSize: 2,
+     applyParticleChance":0
+  }
+]
+}

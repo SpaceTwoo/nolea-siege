@@ -1,0 +1,5 @@
+name: switch
+type: SwitchBlock
+requirements: [ "nanometal/5", "electrocell/5"]
+category: logic
+research: "nanoprocessor"

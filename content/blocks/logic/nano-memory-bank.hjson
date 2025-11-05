@@ -1,0 +1,6 @@
+type: MemoryBlock
+size: 3
+requirements: [ "nanometal/30", "electrocell/80"]
+memoryCapacity: 600
+category: logic
+research: "nanoprocessor"

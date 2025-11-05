@@ -1,0 +1,17 @@
+planet: aserie
+armor: 0
+fogRadius: 20
+type: CoreBlock
+health: 8000
+size: 3
+itemCapacity: 1500
+category: effect
+unitCapModifier: 2
+unitType: 1intruder
+buildVisibility: shown
+research: core-invasion
+requirements: [
+    nanometal/1000
+    electrocell/600
+    t-m/300
+]

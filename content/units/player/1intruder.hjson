@@ -1,0 +1,58 @@
+type: flying
+controller: BuilderAI
+outlineColor: 000907
+flying: true
+speed: 2.4
+drag: 0.1
+itemCapacity: 20
+fogRadius: 4
+rotateSpeed: 8.4
+buildSpeed: 2.5
+mineSpeed: 8
+mineTier: 6
+engineOffset: 8
+hitSize: 15
+health: 1000
+armor: 1
+weapons: [
+  {
+    name: whiplash-railgun
+    mirror: false
+    x: 0
+    y: 0
+    shootCone: 5
+    shootY: 11
+    reload: 244
+    cooldownTime: 300
+    shootSound: railgun
+    recoil: 0
+    bullet: {
+      type: RailBulletType
+      damage: 450
+      buildingDamageMultiplier: 0.01
+      length: 205
+      shootEffect: {
+        type: ParticleEffect
+        lifetime: 25
+        cone: 5
+        colorFrom: ffd280
+        colorTo: d4816a
+        length: 40
+        particles: 6
+      }
+      shootEffect: {
+        type: ParticleEffect
+        particles: 1
+        lifetime: 25
+        sizeFrom: 16
+        sizeTo: 0
+        length: 0
+        colorFrom: ffd37f
+        colorTo: ffd37f
+        region: nul-diamond-wide
+      }
+      hitEffect: railHit
+      // updateEffectSeg: 25
+    }
+  }
+]

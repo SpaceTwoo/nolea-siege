@@ -1,0 +1,56 @@
+type:tank
+health:3000
+armor:3
+speed:0.6
+hitsize:21
+rotateSpeed:2.0
+omniMovement:false
+rotateMoveFirst:true
+itemCapacity:10
+outlineColor:000907
+treadRects:[
+ {
+  x:17
+  y:-41
+  width:16
+  height:73
+ }
+]
+weapons:[
+ {
+  x:0
+  y:0
+  name:aryl-gun
+  reload:65
+  mirror:false
+  rotate:true
+  rotateSpeed:1.5
+  shootY:11
+  shootSound:radical
+  bullet:{
+  type: BasicBulletType
+  width: 12
+  height: 18
+  speed: 6
+  lifetime: 20
+  damage: 120
+  sprite: large-orb
+  hitColor: FC8E11
+  backColor: FC8E11
+  frontColor: ffffff
+  shootEffect: shootBigColor
+  smokeEffect: shootBigSmoke
+  hitEffect: hitBulletColor
+  despawnEffect: hitBulletColor
+  trailWidth: 2
+  trailLength: 25
+  trailColor: FC8E11
+  weaveScale: 1
+  weaveMag: 8
+  homingPower: 0.3
+  homingRange: 85
+  homingDelay: 1.5
+  }
+ }
+]
+research:main-fabricator

@@ -1,0 +1,75 @@
+{
+	"type": "ItemTurret",
+	"name": "Guard",
+	"health": 4000,
+	"size": 2,
+ "outlineColor": 000907,
+	"reload": 30,
+	"range": 140,
+	"maxAmmo": 100,
+	"recoilTime": 10,
+	"recoil": 0.5,
+ "unitSort": "farthest",
+	"consumes": {
+		"coolant": {
+			"amount": 0.2,
+			"optional": true
+		}
+	},
+	"shoot": {
+		"shots": 4,
+		"shotDelay": 2
+	},
+	"drawer": {
+		"type": "DrawTurret",
+ "basePrefix": "nano-",
+		"parts": [
+			{
+				"type": "RegionPart",
+				"mirror": false,
+				"suffix": "-gun",
+				"progress":"recoil",
+				"moveY": -2
+			}
+		]
+	},
+	"shake": 1.1,
+	"liquidCapacity": 30,
+	"ammoPerShot": 4,
+	"ammoUseEffect": "casing2",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0.5,
+	"rotateSpeed": 15,
+	"ammoTypes": {
+		"nanometal": {
+			"speed": 6,
+			"damage": 28,
+   "buildingDamageMultiplier": 0,
+			"lifetime": 30.76,
+			"width": 6,
+			"height": 9,
+			"ammoMultiplier": 2
+		},
+		"w-c": {
+			"speed": 4,
+			"damage": 38,
+   "buildingDamageMultiplier": 0,
+			"lifetime": 25,
+			"width": 13,
+			"height": 8,
+			"ammoMultiplier": 6,
+			"shootEffect":"shootBig"
+		}
+	},
+	"requirements": [
+		"nanometal/100",
+		"electrocell/70"
+	],
+	"category": "turret",
+	"research": "core-invasion"
+ "researchCost": [
+    "nanometal/30",
+    "electrocell/15"
+  ]
+}

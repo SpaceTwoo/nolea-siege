@@ -1,0 +1,14 @@
+      captureWave: 17
+planet: aserie
+sector: 14
+difficulty: 2
+research: {
+requiresUnlock: false
+  parent: m2-TheBird
+  objectives: [
+    {
+      type: SectorComplete
+      preset: m2-TheBird
+    }
+  ]
+}

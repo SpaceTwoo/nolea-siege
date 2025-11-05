@@ -1,0 +1,12 @@
+type: conduit
+category: liquid
+leaks: true
+health: 250
+liquidCapacity: 18
+liquidPressure: 1.025
+placeableLiquid: false
+
+requirements: [
+    nanometal/2
+]
+research: nanopump

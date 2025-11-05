@@ -1,0 +1,4 @@
+type: MessageBlock
+category: logic
+requirements: [ "electrocell/5"]
+research: "nanoprocessor"

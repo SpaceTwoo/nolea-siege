@@ -1,0 +1,15 @@
+type: LogicBlock
+size: 3
+requirements: [ "nanometal/100", "electrocell/100/", "t-m/50"]
+range: 336
+instructionsPerTick: 25
+category: logic
+consumes: {
+    liquids: [
+        {
+            liquid: nanofluid,
+            amount: 0.01
+        }
+    ]
+}
+research: "nanoprocessor"

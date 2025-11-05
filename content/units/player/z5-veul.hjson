@@ -1,0 +1,76 @@
+type: legs
+speed: 0.8
+health: 2850
+payloadCapacity": 500,
+controller: BuilderAI
+defaultCommand: rebuild
+commands: [move, repair, rebuild, assist]
+armor: 1
+flying: false
+legExtension: -2.5
+buildSpeed: 0.6
+legMoveSpace: 0.9
+hovering: false
+legCount: 3
+legLength: 13
+legSpeed: 0.23
+legForwardScl: 0.56
+itemCapacity: 30
+outlineColor: 000907
+hitSize: 18
+researchCostMultiplier: 1.5
+weapons: [
+{
+  x: 0
+    y: 3
+    reload: 94
+    mirror: false
+    rotate: false
+    shootSound: laser
+    inaccuracy: 8
+    shoot: {
+      firstShotDelay: 60
+      shotDelay: 14
+      shots: 3
+    }
+    chargeSound: short-laser-charge
+    bullet: {
+     type: BasicBulletType
+     damage: 100
+     recoil: 1.5
+     homing: false
+     speed: 8
+     sprite: large-bomb
+     lifetime: 55
+     knockback: -1
+     backColor: 84f491
+	   	shootEffect: shootSmallColor
+	   	smokeEffect: shootSmokeTitan
+    frontColor: 84f491
+    mixColorFrom: 84f491
+    mixColorTo: 84f491
+    width: 15
+    height: 15
+    collidesTeam: true
+    healAmount: 40
+	  	fragOnHit: true
+		  fragBullets: 0
+	  	splashDamageRadius: 0
+  		splashDamage: 0
+	  	hitEffect: blastExplosion
+   trailLength: 7
+ 	 trailWidth: 1.9
+   trailColor: 84f491
+    }
+  }
+]
+research: {
+   parent: main-fabricator
+   objectives: [
+      z1-aryl
+      {
+         type: SectorComplete
+         preset: m3-TheProduction
+      }
+   ]
+ }

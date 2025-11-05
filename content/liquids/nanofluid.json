@@ -1,0 +1,10 @@
+{
+  "name": "Nanofluid",
+  "temperature": -2.3,
+  "viscosity": 0.8,
+  "gas": false,
+  "effect": "nanoheal",
+  "color": "5b5f7b",
+  "canStayOn": ["water","cryofluid"],
+  "research": "latubber"
+}

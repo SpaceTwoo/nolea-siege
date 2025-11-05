@@ -1,0 +1,68 @@
+{
+  "type": "UnitFactory",
+  "researchCostMultiplier": 0.3,
+  "size": 3,
+  "health": 1500,
+  "consumes": {
+    "power": 3.3
+  },
+  "plans": [
+    {
+      "unit": "z1-aryl",
+      "requirements": [
+        {
+          "item": "nanometal",
+          "amount": 40
+        },
+        {
+          "item": "electrocell",
+          "amount": 30
+        }
+      ],
+      "time": 1000
+    },
+    {
+      "unit": "z4-unne",
+      "requirements": [
+        {
+          "item": "nanometal",
+          "amount": 30
+        },
+        {
+          "item": "electrocell",
+          "amount": 45
+        }
+      ],
+      "time": 1000
+    }
+  ],
+  "requirements": [
+    {
+      "item": "nanometal",
+      "amount": 100
+    },
+    {
+      "item": "electrocell",
+      "amount": 75
+    },
+    {
+      "item": "w-c",
+      "amount": 10
+    },
+  ],
+  "category": "units",
+  "research": {
+   "parent": "core-invasion",
+   "objectives": [
+      "wc-assembler"
+      {
+         "type": "SectorComplete",
+         "preset": "m3-TheProduction"
+      }
+   ]
+ }
+   "researchCost": [
+     "nanometal/200",
+     "w-c/25"
+   ]
+}

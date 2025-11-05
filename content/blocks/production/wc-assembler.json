@@ -1,0 +1,71 @@
+{	
+"type": "GenericCrafter",
+"size": 3,
+"health": 1000,
+"drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+   {
+    "type": "drawRegion",
+    "suffix": "-bottom"    
+   },
+   {
+    "type": "DrawLiquidTile",
+    "drawLiquid": "goo",
+    "padding": 3
+   },
+   {
+    "type": "DrawFrames",
+    "frames": 7,
+    "sine": false
+   },
+   {
+    "type": "DrawWeave"
+   },
+   {
+   "type": "DrawDefault"
+   }
+               ]
+          },
+"hasPower": true,
+	"hasItems": true,
+	"itemCapacity": 30,
+ "liquidCapacity": 30,
+	"craftTime": 90,
+	"craftEffect": "smeltsmoke",
+	"updateEffect": "none",
+    "ambientSound": "wcloop",
+    "ambientSoundVolume": 0.02,
+	"consumes": {
+		"power": 1.6,
+		"items": {
+			"items": [
+               "nanometal/1"
+			]
+		},
+       "liquid": {
+			"liquid": "goo",
+			"amount": 0.6
+		}
+	},
+	"requirements": [
+     "nanometal/55",
+    "electrocell/30"
+	],
+	"category": "crafting",
+	"research": {
+  "parent": goo-mixer
+   "objectives": [
+      "nanopump"
+      {
+         type: OnSector
+         preset: m3-TheProduction
+      }
+   ]
+  },
+	"outputItem": "w-c/1"
+ "researchCost": [
+    "nanometal/250",
+    "electrocell/250"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "PowerNode",
+  "name": "Energy Bridge",
+  "size": 1,
+  "health": 300,
+  "laserRange": 17,
+  "maxNodes": 12,
+  "hasPower": true,
+  "requiresWater": true,
+  "laserColor2": "FFFAFA",
+  "category": "power",
+  "requirements": [
+    {
+      "item": "nanometal",
+      "amount": 10
+    },
+    {
+      "item": "electrocell",
+      "amount": 5
+    }
+  ],
+  "research": "core-invasion"
+}

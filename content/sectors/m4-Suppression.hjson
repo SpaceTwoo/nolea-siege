@@ -1,0 +1,14 @@
+      captureWave: 18
+planet: aserie
+sector: 34
+difficulty: 3
+research: {
+requiresUnlock: false
+  parent: m3-TheProduction
+  objectives: [
+    {
+      type: SectorComplete
+      preset: m3-TheProduction
+    }
+  ]
+}

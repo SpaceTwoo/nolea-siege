@@ -1,0 +1,12 @@
+{
+	"name": "Latubber",
+	"alwaysUnlocked":false,
+	"color": "ffac32",
+	"flammability": 0.4,
+	"temperature": 3,
+	"heatCapacity": 0,
+	"viscosity": 0.8,
+	"explosiveness": 0,
+	"canStayOn": ["water","cryofluid"],
+	"research": "nanometal"
+}

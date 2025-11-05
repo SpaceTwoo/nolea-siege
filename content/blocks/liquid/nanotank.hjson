@@ -1,0 +1,14 @@
+type: LiquidRouter
+size: 2
+health: 600
+hasLiquids: true
+liquidCapacity: 260
+name: NanoTank
+description: Stores liquids and outputs them to all sides.
+category: liquid
+requirements: [
+  nanometal/50
+]
+research: nanopump
+liquidPadding: 1.2
+researchCostMultiplier: 0.5

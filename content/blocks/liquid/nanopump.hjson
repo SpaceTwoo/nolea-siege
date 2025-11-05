@@ -1,0 +1,27 @@
+type: Pump
+size: 2
+health: 900
+blockedLiquid: water
+blockedItem: water
+hasPower: true
+consumes: {
+  power: 0.2
+}
+pumpAmount: 0.15
+squareSprite: false
+placeableLiquid: true
+liquidCapacity: 10
+requirements: [
+  nanometal/45
+]
+category: liquid
+research: {
+   parent: core-invasion
+   objectives: [
+      energy-bridge
+      {
+         type: SectorComplete
+         preset: m1-TheInvasion
+      }
+   ]
+ }

@@ -1,0 +1,156 @@
+{
+  "type": "hover",
+  "research": {
+  "parent": slimed
+   "objectives": [
+      "rook"
+      {
+         type: OnSector
+         preset: m3-TheProduction
+      }
+   ]
+  },
+  "speed": 1.5,
+  "outlineColor": "000907",
+  "hitSize": 18,
+  "health": 2460,
+  "armor": 1,
+  "canBoost": true,
+  "hovering": true,
+  "shadowElevation": 0.1,
+  "useEngineElevation": false,
+  "faceTarget": true,
+  "targetAir": true,
+  "engineSize": 2,
+  "engineOffset": 7,
+  "trailColor": "54FE00",
+  "trailLength": 6,
+  "engineColor": "54FE00",
+  "rotateSpeed": 3,
+  "parts": [
+    {
+      "type": "hoverPart",
+      "color": "00C600",
+      "layerOffset": -1,
+      "x": 6,
+      "phase": 90,
+      "stroke": 2,
+      "radius": 6,
+      "mirror": true,
+      "y": -4
+    },
+    {
+      "type": "hoverPart",
+      "color": "00C600",
+      "layerOffset": -1,
+      "x": 6,
+      "phase": 90,
+      "stroke": 2,
+      "radius": 6,
+      "mirror": true,
+      "y": 4
+    }
+  ],
+  "weapons": [
+    {
+      "name": "miasma-gas",
+      "mirror": true,
+      "alternating": true,
+      "reload": 150,
+      "rotate": false,
+      "shootSound": "gassy"
+      "bullet": {
+     "type": "BasicBulletType"
+     "sprite": "circle-bullet",
+     "lifetime": 55,
+     "speed": 2.0,
+     "shrink Y": 0,
+     "damage": 98,
+     "collideTerrain": true,
+     "width": 9,
+     "height": 9,
+     "frontColor": "54FE00",
+     "backColor": "00C600",
+     "trailColor": "54FE00",
+     "trailWidth": 4,
+     "trailLength": 8,
+     "trailEffect": "missileTrail",
+     "intervalBullets": 1,
+     "bulletInterval": 28,
+     "intervalRandomSpread": 0,
+     "hitEffect": {
+       "type": "multiEffect",
+       "effects": [
+     {
+       "type": "ParticleEffect",
+       "region": "nul-disc",
+       "particles": 1,
+       "length": 0,
+       "lifetime": 180,
+       "spin": -1,
+       "sizeFrom": 15,
+       "sizeTo": 45,
+       "interp": "swingIn",
+       "colorFrom": "00C600",
+       "colorTo": "54FE00"
+     },
+     {
+      "type": "ParticleEffect",
+      "region": "nul-disc",
+      "particles": 1,
+      "length": 0,
+      "lifetime": 180,
+      "spin": -0.8,
+      "sizeFrom": 15,
+      "sizeTo": 45,
+      "interp": "swingIn",
+      "colorFrom": "00C600",
+      "colorTo": "54FE00"
+     },
+     {
+      "type": "ParticleEffect",
+      "region": "nul-disc-top",
+      "particles": 1,
+      "length": 0,
+      "lifetime": 180,
+      "spin": -1,
+      "sizeFrom": 15,
+      "sizeTo": 45,
+      "interp": "swingIn",
+      "colorFrom": "00C600",
+      "colorTo": "54FE00"
+     }
+    ]
+   }
+  }
+ }
+]
+"abilities": [
+    {
+      "type": "mindustry.entities.abilities.RepairFieldAbility",
+      "activeEffect": {
+        "type": "WaveEffect",
+        "lifetime": 25,
+        "sizeFrom": 0,
+        "sizeTo": 80,
+        "strokeFrom": 6,
+        "strokeTo": 0,
+        "colorFrom": "84f491",
+        "colorTo": "84f491"
+      },
+      "healEffect": {
+        "type": "WaveEffect",
+        "lifetime": 25,
+        "sizeFrom": 0,
+        "sizeTo": 10,
+        "strokeFrom": 6,
+        "strokeTo": 0,
+        "colorFrom": "84f491",
+        "colorTo": "84f491"
+      },
+      "range": 40,
+      "amount": 100,
+      "reload": 80
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+type: mech
+name: kniffer
+speed: 1.2
+health: 2150
+outlineColor: 000907
+hitSize: 9
+
+mechSideSway: 0.25
+range: 20
+
+weapons: [
+    {
+        shootOnDeath: true
+        targetUnderBlocks: false
+        reload: 24
+        shootCone: 30
+        ejectEffect: none
+        shootSound: explosion
+        x: 0
+        shootY: 0
+        mirror: false
+                bullet: {
+                    collidesTiles: false
+                    collides: false
+                    hitSound: Hyperjump
+
+                    rangeOverride: 180
+                    hitEffect: pulverize
+                    speed: 0
+                    splashDamageRadius: 20
+                    instantDisappear: true
+                    splashDamage: 40
+                    killShooter: true
+                    hittable: false
+                    collidesAir: true
+                }
+    }
+]
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        amount: 1
+        spread: 0
+        faceOutwards: false
+        unit: phantom
+    },
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 10
+    }
+]
+

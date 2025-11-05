@@ -1,0 +1,311 @@
+type: mech
+description: "hahah."
+name: Phantom
+research: {
+   parent: slimed
+   objectives: [
+      rook
+      {
+         type: OnSector
+         preset: m2-TheBird
+      }
+   ]
+ }
+alwaysShootWhenMoving: true
+outlineColor: 000907
+targetAir: false
+flying: false
+hitSize: 8
+range: 7
+
+boostMultiplier: 0.54
+stepShake: 0.40
+fallSpeed: 0.8
+fogRadius: 15
+
+itemCapacity: 24
+rotateSpeed: 5
+health: 2000
+speed: 1.2
+armor: 2
+
+lightOpacity: 0.7
+lightRadius: 21
+
+immunities: [ freezing, glued ]
+
+weapons: [
+    {
+    name: phase-reapers
+    layerOffset: -0.001
+    rotationLimit: 45
+    baseRotation: -10
+    rotateSpeed: 3
+    shootCone: 45
+    rotate: true
+    recoil: -2
+    shootY: 10
+    top: false
+    x: 5
+    y: -1
+
+    cooldownTime: 120
+    reload: 7
+
+    shootSound: missle
+    ejectEffect: none
+    heatColor: FFFFFF
+
+bullet: {
+    type: BasicBulletType
+    instantDisappear: true
+    keepVelocity: false
+    collidesAir: false
+    rangeOverride: 20
+    pierceArmor: true
+    height: 0
+    width: 0
+
+    splashDamageRadius: 16
+    splashDamage: 125
+    lifetime: 2.5
+    damage: 125
+
+    frontColor: a08be4
+    backColor: a08be4
+
+    lightColor: a08be4
+    lightOpacity: 0.7
+    lightRadius: 21.5
+
+    hitEffect: hitBulletColor
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: none
+}
+    }
+
+{
+    controllable: false
+    autoTarget: true
+    shootCone: 360
+    mirror: false
+    shootY: 0
+    x: 0
+    y: 0
+
+    shootStatus: AbilityCastRestriction
+    shootStatusDuration: 160
+    reload: 1440
+
+    chargeSound: plasma-reload
+    ejectEffect: none
+    shootSound: none
+shoot: {
+    firstShotDelay: 95
+    shots: 1
+    }
+
+bullet: {
+    instantDisappear: true
+    collidesTiles: false
+    rangeOverride: 100
+    collidesAir: false
+    hittable: false
+    collides: false
+
+    buildingDamageMultiplier: 0.1
+
+    splashDamageRadius: 110
+    statusDuration: 150
+    status: heatwave
+    splashDamage: 160
+    speed: 0
+
+    frontColor: FFFAFA
+    backColor: a08be4
+    hitColor: a08be4
+
+    despawnSound: missle
+    hitSound: none
+
+despawnEffect: {
+    type: ExplosionEffect
+
+    lifetime: 48
+
+    waveColor: FFFAFA
+    waveStroke: 3.2
+    waveRad: 120
+
+    smokeSizeBase: 0
+    smokeSize: 0
+    smokes: 0
+
+    sparkColor: FFFAFA
+    sparkStroke: 1.5
+    sparkRad: 28
+    sparkLen: 4
+    sparks: 18
+    }
+
+hitEffect: {
+    type: ExplosionEffect
+
+    lifetime: 38
+
+    waveColor: a08be4
+    waveStroke: 3.2
+    waveRad: 110
+
+    smokeSizeBase: 0
+    smokeSize: 0
+    smokes: 0
+
+    sparkColor: a08be4
+    sparkStroke: 1.3
+    sparkRad: 24
+    sparkLen: 5
+    sparks: 10
+    }
+}
+    }
+
+{
+    display: false
+    rotate: false
+    mirror: false
+    x: 0
+    y: 0
+
+    shootCone: 5
+    reload: 500
+
+    shootSound: hyperjump
+
+bullet: {
+    pierceBuilding: true
+    rangeOverride: 165
+    collidesAir: false
+    collides: false
+    pierce: true
+    impact: true
+    height: 0
+    width: 0
+
+    lifetime: 10
+    recoil: -48
+    damage: 0
+    speed: 8
+
+    despawnEffect: none
+    hitEffect: none
+}
+    }
+
+{
+    controllable: false
+    baseRotation: 90
+    autoTarget: true
+    display: false
+    rotate: false
+    mirror: false
+    x: 0
+    y: 0
+
+    shootCone: 15
+    reload: 750
+
+    shootSound: hyperjump
+
+bullet: {
+    pierceBuilding: true
+    collidesAir: false
+    rangeOverride: 32
+    collides: false
+    pierce: true
+    impact: true
+    height: 0
+    width: 0
+
+    lifetime: 10
+    recoil: -6
+    damage: 0
+    speed: 8
+
+    despawnEffect: none
+    hitEffect: none
+}
+    }
+
+{
+    controllable: false
+    baseRotation: -90
+    autoTarget: true
+    display: false
+    rotate: false
+    mirror: false
+    x: 0
+    y: 0
+
+    shootCone: 15
+    reload: 750
+
+    shootSound: hyperjump
+
+bullet: {
+    pierceBuilding: true
+    collidesAir: false
+    rangeOverride: 32
+    collides: false
+    pierce: true
+    impact: true
+    height: 0
+    width: 0
+
+    lifetime: 10
+    recoil: -6
+    damage: 0
+    speed: 8
+
+    despawnEffect: none
+    hitEffect: none
+}
+    }
+
+{
+    controllable: false
+    baseRotation: 180
+    autoTarget: true
+    display: false
+    rotate: false
+    mirror: false
+    x: 0
+    y: 0
+
+    shootCone: 30
+    reload: 900
+
+    shootSound: hyperjump
+
+bullet: {
+    pierceBuilding: true
+    collidesAir: false
+    rangeOverride: 64
+    collides: false
+    pierce: true
+    impact: true
+    height: 0
+    width: 0
+
+    lifetime: 10
+    recoil: -12
+    damage: 0
+    speed: 8
+
+    despawnEffect: none
+    hitEffect: none
+    }
+}
+    ]
+

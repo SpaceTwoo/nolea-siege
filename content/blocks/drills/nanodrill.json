@@ -1,0 +1,23 @@
+{
+	"name": "NanoDrill",
+	"type": "Drill",
+	"size": 4,
+	"health": 1000,
+	"tier": 5,
+	"drillTime": 350,
+	"canOverdrive": true,
+	"warmupSpeed": 0.02,
+	"drillEffect": "mineBig",
+	"updateEffect": "mineBig",
+	"rotateSpeed": 2,
+	"drawMineItem": true,
+	"itemCapacity": 10,
+	"requirements": [
+		"nanometal/40"
+	],
+	"category": "production",
+	"research": "core-invasion"
+ "researchCost": [
+    "nanometal/40"
+  ]
+}

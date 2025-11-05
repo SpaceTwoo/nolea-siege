@@ -1,0 +1,44 @@
+type:ConsumeGenerator
+name:Energy Extractor
+description: generates energy from electrocells.
+size:2
+health:750
+category:power
+squareSprite:false
+powerProduction:3
+consumes:{
+   items:[
+   electrocell/1
+   ]
+}
+itemDuration:150
+drawer:{
+   type:DrawMulti
+   drawers:[
+      {
+      type:DrawRegion
+      suffix:-mid
+      }
+      {
+      type:DrawSoftParticles
+      color:ec5800
+      color2:ff8a04
+      alpha:0.5
+      particleRad:8
+      particleSize:7
+      particleLife:40
+      particles:20
+      }
+      {
+      type:DrawDefault
+      }
+   ]
+}
+requirements:[
+   nanometal/45
+]
+buildCostMultiplier:0.8
+research:energy-bridge
+researchCost:[
+ nanometal/60
+]

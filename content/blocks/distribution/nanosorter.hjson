@@ -1,0 +1,12 @@
+type: Sorter
+hasShadow: false
+health: 200
+buildCostMultiplier: 10
+requirements: [
+  nanometal/2
+]
+category: distribution
+research: transfer-point
+researchCost: [
+  nanometal/12
+]

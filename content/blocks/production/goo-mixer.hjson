@@ -1,0 +1,64 @@
+type: GenericCrafter
+size: 3
+health: 1000,
+
+hasLiquids: true
+liquidCapacity: 30
+craftEffect: pulverize
+updateEffect: pulverize
+craftTime: 20
+
+consumes: {
+  power: 1.0
+  liquid: {
+    liquid: latubber
+    amount: 2
+  }
+}
+
+outputLiquid: goo/1
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: goo
+    padding: 4
+  }
+  {
+    type: DrawLiquidRegion
+    drawLiquid: latubber
+  }
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+]
+
+category: crafting
+research: {
+   parent: core-invasion
+   objectives: [
+      energy-bridge
+      {
+         type: SectorComplete
+         preset: m1-TheInvasion
+      }
+   ]
+  researchCost: [
+  nanometal/100
+  electrocell/50
+]
+}
+
+requirements: [
+  nanometal/60
+  electrocell/10
+]
+
+researchCostMultiplier: 0.3

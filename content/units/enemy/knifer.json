@@ -1,0 +1,37 @@
+
+{
+  "type": "mech",
+  "research": "core-invasion"
+  "researchCost": [
+    "nanometal/5"
+  ],
+  "name": "Knifer",
+  "description": "The Knifer is a powerful combat Drone augmented with heated titanium blades that can easily cut through any surface.",
+  "health": 2150,
+  "outlineColor": 000907,
+  "hitSize": 9,
+  "speed": 1.1,
+  "armor": 5,
+  "range": 8,
+  "weapons": [
+    {
+      "name": "knifer-knife",
+      "reload": 14,
+      "ejectEffect": "none",
+      "recoil": -4,
+      "shootY": 5,
+      "bullet": {
+        "type": "basicBulletType",
+        "width": 0,
+        "height": 0,
+        "lifetime": 1,
+        "speed": 9,
+        "shootEffect": "none",
+        "smokeEffect": "none",
+        "despawnEffect": "none",
+        "hitEffect": "smeltsmoke",
+        "damage": 93
+      }
+    }
+  ]
+}

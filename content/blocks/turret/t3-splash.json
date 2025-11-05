@@ -1,0 +1,72 @@
+{
+	"type": "LiquidTurret",
+	"name": "Splash",
+	"health": 5000,
+	"size": 3,
+ "outlineColor": 000907,
+	"shoot": {
+		"shots": 3,
+		"shotDelay": 3
+	},
+	"reload": 0.6,
+	"range": 190,
+	"recoilTime": 10,
+	"recoil": 1,
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 1,
+	"rotateSpeed": 7.5,
+	"shootCone": 100,
+	"velocityRnd": 0.1,
+ "drawer": {
+    "type": "drawTurret",
+    "basePrefix": "nano-"
+  },
+	"consumes": {
+		"power": 4
+		"coolant": {
+			"amount": 0.2,
+			"optional": true
+	}
+ },
+	"liquidCapacity": 200,
+	"ammoTypes": {
+		"latubber": {
+			"type": "LiquidBulletType",
+			"liquid": "latubber",
+			"lifetime": 30,
+			"speed": 5,
+			"puddleSize": 6,
+			"orbSize": 4,
+			"knockback": 0.3,
+			"status": "melting",
+			"statusDuration": 500,
+			"damage": 3
+		},
+		"goo": {
+			"type": "LiquidBulletType",
+			"liquid": "goo",
+			"lifetime": 33,
+			"speed": 7,
+			"puddleSize": 4,
+			"orbSize": 5,
+			"knockback": 0.4,
+			"statusDuration": 500,
+			"status": "glued",
+			"damage": 2
+		}
+	},
+	"requirements": [
+		"nanometal/180",
+		"electrocell/20"
+	],
+	"category": "turret",
+ "research": "t2-rupture",
+	"objectives": [
+      "nanopump"
+      {
+         type: OnSector
+         preset: m2-TheBird
+      }
+   ]
+}

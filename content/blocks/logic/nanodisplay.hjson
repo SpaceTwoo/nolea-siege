@@ -1,0 +1,6 @@
+type: LogicDisplay
+size: 3
+requirements: [ "nanometal/100", "electrocell/50"]
+displaySize: 80
+category: logic
+research: "nanomessenger"

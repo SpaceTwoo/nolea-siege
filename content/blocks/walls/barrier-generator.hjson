@@ -1,0 +1,20 @@
+name: Barrier Generator
+type: DirectionalForceProjector
+health: 3000
+size: 4
+width: 60
+length: 60
+shieldHealth: 4000
+cooldownNormal: 1.25
+cooldownBrokenBase: 0.25
+consumes: {
+power: 5
+}
+category: defense
+research: nanowall
+requirements: [
+nanometal/ 700
+nanometal/60
+electrocell/100
+t-m/40
+]

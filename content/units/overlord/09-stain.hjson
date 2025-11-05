@@ -1,0 +1,114 @@
+type: legs
+hitSize: 25
+singleTarget: true
+faceTarget: true
+health: 23500
+armor: 4
+speed: 0.39
+rotateSpeed: 1.5
+itemCapacity: 50
+outlineColor: 000907
+research: {
+   parent: 05-bravery
+   objectives: [
+      t3-splash
+      {
+         type: SectorComplete
+         preset: m4-Suppression
+      }
+   ]
+ }
+legMoveSpace: 1
+legLength: 26
+legExtension: -10
+legBaseOffset: 10
+legSpeed: 0.2
+legLengthScl: 0.96
+rippleScale: 2
+legContinuousMove: true
+legSplashDamage: 25
+legSplashRange: 20
+allowLegStep: true
+hovering: true
+groundLayer: 60
+abilities: [
+    {
+      type: UnitSpawnAbility
+      spawnX: 0
+      spawnY: 0
+      unit: helper
+      spawnTime: 400
+    }
+]
+weapons: [
+  {
+    name: stainer
+    continuous: true
+    mirror: false
+    shootY: 14
+    top: false
+    recoil: 0
+    shake: 8
+    x: 0
+    y: 0
+
+    cooldownTime: 200
+    reload: 400
+
+    shootStatusDuration: 190
+    shootStatus: slow
+
+shoot: {
+    firstShotDelay: 60
+
+    lifetime: 1
+}
+
+    chargeSound: lasercharge2
+    shootSound: beam
+
+    parentizeEffects: true
+
+effects: [
+{
+    type: ParticleEffect
+    region: nul-stainer-heat
+    heatColor: FF37B1
+    sizeFrom: 50
+    ength: 0
+
+    lifetime: 30
+    particles: 1
+
+    colorFrom: FF37B1
+    colorTo: f04dad
+    }
+]
+
+bullet: {
+    type: ContinuousLaserBulletType
+    despawnShake: 4.5
+    drawSize: 420
+    hitShake: 4.5
+    length: 180
+    shake: 5.5
+
+    lifetime: 160
+    damage: 140
+
+    incendChance: 0.1
+    incendSpread: 5
+    incendAmount: 1
+
+    chargeEffect: greenLaserChargeSmall
+    despawnEffect: smokeCloud
+    hitEffect: hitMeltdown
+    smokeEffect: none
+
+    colors: [ FF37B1, ffffff ]
+    lightColor: EB5BDE
+    lightOpacity: 0.7
+}
+    }
+]
+researchCostMultiplier: 2

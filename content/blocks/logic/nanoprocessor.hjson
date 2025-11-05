@@ -1,0 +1,14 @@
+type: LogicBlock
+requirements: [ "nanometal/20", "electrocell/25"]
+instructionsPerTick: 2
+category: logic
+research: {
+   parent: core-invasion
+   objectives: [
+      energy-bridge
+      {
+         type: OnSector
+         preset: m2-TheBird
+      }
+   ]
+ }

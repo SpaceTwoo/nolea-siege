@@ -1,0 +1,103 @@
+type: naval
+health: 2700
+armor: 1
+naval: true
+speed: 1
+drag: 0.14
+hitSize: 10
+accel: 0.4
+outlineColor: 000907
+immunities: [ melting]
+faceTarget: false
+rotateSpeed: 4
+deathExplosionEffect: {
+    type: ExplosionEffect
+    waveLife: 8
+    waveRad: 16
+    waveColor: 73F9DF
+    waveStroke: 1.5
+    sparks: 6
+    sparkLen: 3
+    lifetime: 120
+    sparkColor: 00FE9F
+    sparkStroke: 1.5
+    sparkRad: 20
+    smokes: 7
+    smokeColor: 00CC94
+    smokeSize: 6
+    smokeRad: 20
+}
+weapons: [
+    {
+        name: fishbite
+        reload: 16
+        recoil: 3
+        x: 0
+        y: 3
+        rotateSpeed: 4.2
+        rotate: true
+        mirror: false
+        ejectEffect: casing1
+        shootSound: missile
+        bullet: {
+        damage: 30
+       speed: 4
+       lifetime: 50
+       splashDamage: 45
+       splashDamageRadius: 24
+       scaledSplashDamage: true
+       hitSound: explosion
+       sprite: missile-large
+       width: 10
+       height: 14
+       frontColor: ffffff
+       backColor: 00FE9F
+       trailColor: 73F9DF
+       trailWidth: 3
+       trailLength: 7
+       hitEffect: {
+        type: ExplosionEffect
+        lifetime: 35
+        waveRad: 24
+        sparkRad: 30
+        smokeRad: 19
+        waveLife: 5
+        waveStroke: 3
+        waveColor: 73F9DF
+        sparks: 6
+        sparkLen: 4
+        sparkStroke: 2
+        sparkColor: 00FE9F
+        smokes: 24
+        smokeColor: 00CC94
+        smokeSize: 3
+       }
+        shootEffect: shootBig
+        smokeEffect: shootBigSmoke
+        despawnEffect: {
+                type: ExplosionEffect
+                waveRad: 8
+                waveLife: 13
+                waveColor: 73F9DF
+                sparks: 5
+                sparkColor: 00FE9F
+                sparkRad: 12
+                sparkStroke: 3
+                sparkLen: 7
+                smokes: 4
+                smokeSize: 9
+                smokeRad: 12
+                smokeColor: 00CC94
+            }
+        }
+    }
+]
+research: {
+    parent: miasma
+    objectives: [
+        {
+            type: OnSector
+            preset: m3-TheProduction
+        }
+    ]
+}

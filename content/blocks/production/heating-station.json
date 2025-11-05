@@ -1,0 +1,51 @@
+{
+  "type": "HeatProducer",
+  "size": 2,
+  "rotateDraw": false,
+  "researchCostMultiplier": 2,
+  "category": "crafting",
+  "research": "wc-assembler",
+	 "objectives": [
+      "nanopump"
+      {
+         type: SectorComplete
+         preset: m3-TheProduction
+      }
+   ]
+  "requirements": [
+    "nanometal/25",
+    "electrocell/75"
+  ],
+  "heatOutput": 2,
+  "regionRotated1": 1,
+  "ambientSound": "extractLoop",
+  "ambientSoundVolume": 0.09,
+  "consumes": {
+    "power": 2.2
+  },
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawSpikes",
+        "color": "ffd59e",
+        "stroke": 0.8,
+        "layers": 2,
+        "length": 1,
+        "amount": 3,
+        "rotateSpeed": 0.5,
+        "layerSpeed": -0.9
+      },
+      {
+        "type": "DrawDefault" 
+      },
+      {
+        "type": "DrawHeatOutput" 
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"type": "ItemBridge",
+	"name": "Transfer Point",
+	"health": 200,
+ "hasPower": false,
+ "consumesPower": false,
+ "outputsPower": false,
+	"range": 6,
+	"transportTime":1,
+	"arrowSpacing": 4,
+	"arrowOffset": 4,
+	"arrowTimeScl": 12,
+	"bridgeWidth": 8,
+	"requirements": [
+		"nanometal/5"
+	],
+	"category": "distribution",	
+	"research": "core-invasion",
+ "researchCost": [
+    "nanometal/5"
+  ],
+}

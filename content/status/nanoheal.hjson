@@ -1,0 +1,13 @@
+color: 5b5f6b
+damage: -10
+effect: {
+  type: WaveEffect
+  lifetime: 9
+  sizeFrom: 2
+  sizeTo: 0
+  strokeFrom: 1
+  strokeTo: 0
+  colorFrom: 000907
+  colorTo: 5b5f6b
+}
+effectChance: 0.07

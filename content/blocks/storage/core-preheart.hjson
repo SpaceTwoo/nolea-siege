@@ -1,0 +1,60 @@
+type: PowerTurret
+targetAir: true
+outlineColor: 000907
+health: 7000
+reload: 75
+range: 180
+moveWhileCharging: false
+size: 3
+shootSound: laser
+heatColor: 5782c2
+inaccuracy: 6
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -side
+      mirror: true,
+      progress: warmup
+      moveX: 1
+      under: true
+      moveY: 2
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          y: -1
+        }
+      ]
+    }
+  ]
+}
+consumes: {
+  power: 0
+}
+shoot: {
+  firstShotDelay: 30
+  type: ShootBarrel
+  barrels: [
+    0, -3, 0,
+    8, -4, 0,
+    -8, -4, 0
+  ],
+  barrelOffset: 1
+  shots: 3
+  shotDelay: 6.1
+}
+shootType: {
+  type: LaserBulletType
+  length: 200
+  width: 30
+  damage: 100
+  chargeEffect: lightningCharge
+  colors: [D3E4FE, FFFAFA, ffffff]
+}
+category: effect
+chargeSound: lasercharge
+requirements: [
+  d-c/1
+]

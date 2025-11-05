@@ -1,0 +1,179 @@
+{
+	"type": "ItemTurret",
+	"name": "Rupture",
+	"health": 5000,
+	"size": 3,
+ "outlineColor": 000907,
+	"reload": 22,
+	"range": 110,
+	"maxAmmo": 100,
+	"recoilTime": 20,
+	"recoil": 2,
+	"shootY": 8,
+	"shoot": {
+		"type": "ShootSpread",
+		"shots": 34,
+		"spread": 0.77
+	},
+	"drawer": {
+		"type": "DrawTurret",
+  "basePrefix": "nano-",
+		"parts": [
+			{
+				"type": "RegionPart",
+				"mirror": false,
+				"progress": "reload",
+				"suffix": "-gun",
+				"layer": 50,
+				"moveX": 0,
+				"moveY": -1
+			}
+		]
+	},
+	"consumes": {
+		"coolant": {
+			"amount": 0.6,
+			"optional": true
+		}
+	},
+	"shootSound": "shotgun",
+	"ammoUseEffect": "casing2Double",
+	"ammoPerShot": 5,
+	"shootEffect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"sizeFrom": 9,
+		"sizeTo": 0,
+		"line": true,
+		"length": 55,
+		"baseLength": 0,
+		"lifetime": 10,
+		"colorFrom": "dedede",
+		"colorTo": "aaaaaa",
+		"cone": 60
+	},
+	"targetGround": true,
+	"targetAir": false,
+	"inaccuracy": 23,
+	"shake": 3,
+	"shootCone": 35,
+	"rotateSpeed": 16,
+	"velocityRnd": 0.3,
+	"ammoTypes": {
+		"nanometal": {
+			"type": "BasicBulletType",
+			"speed": 9.7,
+			"damage": 8,
+			"buildingDamageMultiplier": 0.2,
+			"knockback": 1.5,
+			"lifetime": 10,
+			"width": 8,
+			"height": 10,
+			"ammoMultiplier": 6,
+			"pierce": true,
+			"pierceBuilding": true,
+			"pierceCap": 2,
+			"pierceArmor": false,
+			"backColor": "FFFAFA",
+			"frontColor": "FFFAFA",
+			"trailColor": "FFFAFA",
+			"trailLength": 2,
+			"trailWidth": 2.2,
+			"hitEffect": {
+				"type": "ParticleEffect",
+				"particles": 3,
+				"line": true,
+				"length": 13,
+				"baseLength": 0,
+				"lifetime": 10,
+				"colorFrom": "FFFAFA",
+				"colorTo": "FFFFFF"
+			},
+			"hitColor": "FFFAFA",
+			"despawnEffect": "hitBulletColor",
+			"shootEffect": "none",
+			"smokeEffect": "none"
+		},
+		"w-c": {
+			"type": "BasicBulletType",
+			"speed": 9.5,
+			"damage": 10,
+			"buildingDamageMultiplier": 0.2,
+			"knockback": 4,
+			"lifetime": 10,
+			"width": 8,
+			"height": 10,
+			"ammoMultiplier": 6,
+			"pierce": true,
+			"pierceBuilding": true,
+			"pierceCap": 1,
+			"pierceArmor": false,
+			"backColor": "f9a3c7",
+			"frontColor": "f9a3c7",
+			"trailColor": "f9a3c7",
+			"trailLength": 2.2,
+			"trailWidth": 2.1,
+			"hitEffect": {
+				"type": "ParticleEffect",
+				"particles": 3,
+				"line": true,
+				"length": 10,
+				"baseLength": 0,
+				"lifetime": 10,
+				"colorFrom": "f9a3c7",
+				"colorTo": "FFFFFF"
+			},
+			"hitColor": "f9a3c7",
+			"despawnEffect": "hitBulletColor",
+			"shootEffect": "none",
+			"smokeEffect": "none"
+		},
+  "l-tank": {
+			"type": "BasicBulletType",
+			"damage": 5,
+			"splashDamageRadius": 18.6,
+			"splashDamage": 12,
+			"buildingDamageMultiplier": 0.2,
+			"status": "burning",
+			"statusDuration": 500,
+			"makeFire": true,
+			"pierce": true,
+			"pierceCap": 1,
+			"knockback": 1.1,
+			"speed": 9.3,
+			"lifetime": 10,
+			"backColor": "FF8C00",
+			"frontColor": "FFB90F",
+			"width": 8,
+			"height": 10,
+			"trailColor": "FF8C00",
+			"trailLength": 2,
+			"trailWidth": 2.3,
+			"ammoMultiplier": 4,
+			"hitEffect": {
+				"type": "ParticleEffect",
+				"particles": 3,
+				"line": true,
+				"length": 16,
+				"baseLength": 0,
+				"lifetime": 10,
+				"colorFrom": "FF8C00",
+				"colorTo": "FFFFFF"
+			},
+			"hitColor": "FF8C00",
+			"despawnEffect": "hitBulletColor",
+			"shootEffect": "none",
+			"smokeEffect": "none"
+	},
+}
+	"requirements": [
+		"nanometal/250",
+		"electrocell/25"
+	],
+	"category": "turret",
+	"research": "t1-guard"
+ "researchCost": [
+    "nanometal/100",
+    "electrocell/25"
+  ]
+}

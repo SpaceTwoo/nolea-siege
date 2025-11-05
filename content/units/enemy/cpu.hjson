@@ -1,0 +1,258 @@
+type: flying
+research: {
+   parent: rook
+   objectives: [
+      miasma
+      {
+         type: OnSector
+         preset: m3-TheProduction
+      }
+   ]
+ }
+flying: true
+health: 7000
+outlineColor: 000907
+speed: 2
+drag: 0.05
+accel: 0.05
+rotateSpeed: 2
+itemCapacity: 0
+hitSize: 10
+drawEngine: false
+createScorch: false
+targetAir: false
+lightRadius: 0
+abilities: [
+    {
+    type: RegenAbility
+    amount: 0.04
+}
+
+    {
+    type: ShieldArcAbility
+    whenShooting: false
+    angleOffset: -90
+    angle: 90
+    y: 0
+
+    cooldown: 300
+    regen: 4
+    max: 1000
+}
+
+    {
+    type: ShieldArcAbility
+    whenShooting: false
+    angleOffset: 90
+    angle: 90
+    x: 0
+
+    cooldown: 300
+    regen: 4
+    max: 1000
+}
+
+    {
+    type: MoveEffectAbility
+    effect: artilleryTrail
+    minVelocity: 0.025
+    teamColor: true
+    effectParam: 1
+    interval: 0.05
+    x: 0
+    y: 0
+}
+    ]
+
+weapons: [
+{
+    name: cpu-core
+    rotateSpeed: 2.4
+    autoTarget: true
+    alternate: false
+    shootCone: 48
+    mirror: false
+    rotate: false
+    recoil: 0
+    shootY: 0
+    x: 0
+    y: 0
+
+    shootStatusDuration: 190
+    shootStatus: unmoving
+    cooldownTime: 320
+    velocityRnd: 0.2
+    inaccuracy: 360
+    reload: 360
+
+    chargeSound: cpu
+    shootSound: bang
+    heatColor: d1efff
+
+shoot: { 
+    type: ShootMulti
+    firstShotDelay: 185
+source: {
+    type: ShootHelix
+    firstShotDelay: 185
+    shotDelay: 12
+    barrels: 1
+    spread: 0
+    shots: 6
+    }
+
+dest: [ 
+{
+    type: ShootAlternate
+    barrels: 1
+    spread: 0
+    shots: 1
+    }
+]
+    }
+
+parts: [
+    {
+    type: ShapePart
+    progress: charge
+    circle: true
+    hollow: true
+
+    color: FF8C97
+    layer: 100
+    
+    rotateSpeed: 1
+    rotation: 0
+
+    radiusTo: 0
+    radius: 24
+
+    strokeTo: 2.4
+    stroke: 0
+}
+
+    {
+    type: HaloPart
+    progress: recoil
+    color: F00C5B
+    layer: 100
+    shapes: 4
+    moveY: 0
+    x: 0
+    y: 0
+
+    haloRotateSpeed: 0.25
+    haloRotation: 0
+
+    triLengthTo: 3
+    haloRadius: 6
+    triLength: 0
+    radius: 2
+    tri: true
+}
+
+    {
+    type: FlarePart
+    color2: F00C5B
+    color1: FF8C97
+    radius: 7.5
+    stroke: 1
+}
+    ]
+
+bullet: {
+    type: BasicBulletType
+    sprite: nul-bomb-bolt
+    despawnShake: 4.5
+    hitShake: 4.5
+    shrinkX: 0.5
+    shrinkY: 0.5
+    height: 6
+    width: 6
+
+    splashDamageRadius: 26
+    splashDamage: 60
+    homingPower: 0.1
+    homingRange: 500
+    lifetime: 90
+    damage: 65
+    speed: 7
+
+    weaveScale: 4
+    weaveMag: 4
+
+    lightColor: FF8C97
+    lightOpacity: 0.7
+    lightRadius: 24.5
+
+    trailInterp: slope
+    trailColor: F00C5B
+    trailLength: 24
+    trailWidth: 1.5
+
+    frontColor: FF8C97
+    backColor: F00C5B
+    hitColor: BB2765
+
+    despawnEffect: hitBulletColor
+    hitEffect: hitBulletColor
+    smokeEffect: none
+    shootEffect: none
+    hitSound: none
+    }
+}
+  {
+    name: cpu-sniper
+        x: 6
+        y: 10.5
+        rotate: false
+        top: false
+        mirror: false
+        shoot: {
+            shots: 6
+            shotDelay: 48
+        }
+        reload: 100
+        recoil: 2
+        shootY: 2
+        recoilTime: 15
+        shootSound: rooker
+        ejectEffect: none
+        bullet: {
+            type: ShrapnelBulletType
+            length: 150
+            damage: 85
+            width: 6
+            serrations: 4
+            serrationLenScl: 0.7
+            serrationWidth: 1.2
+            serrationSpacing: 14
+            lifetime:25
+            shootEffect: {
+                particles: 16
+                cone: 45
+                length: 20
+                lifetime: 15
+                line: true
+                sizeFrom: 6
+                sizeTo: 0
+                strokeFrom: 3
+                strokeTo: 0
+                colorFrom: FFFAFA
+                colorTo: FF8C97
+            }
+            smokeEffect: none
+            lifetime: 30
+            toColor: FFFAFA
+        }
+    }
+]
+parts: [
+	{
+		type: RegionPart
+		suffix: -wire
+  x: 6
+		layer: 115
+		outline: true
+	}
+]

@@ -1,0 +1,27 @@
+type: MendProjector
+size: 3
+health: 15000
+category: defense
+research: {
+parent: nanowall
+}
+reload: 25
+healPercent: 0.6
+group: walls
+range: 10
+baseColor: FFFAFA
+phaseColor: FFFAFA
+phaseBoost: 0
+phaseRangeBoost: 0
+useTime: 300
+canOverdrive: false
+consumes: {
+liquid: {
+liquid: nanofluid
+amount: 0.3
+}
+}
+requirements: [
+nanometal/600
+]
+envDisabled: 16

@@ -1,0 +1,24 @@
+planet: aserie
+armor: 0
+fogRadius: 35
+type: CoreBlock
+health: 38000
+isFirstTier: true
+size: 4
+itemCapacity: 3500
+category: effect
+unitCapModifier: 5
+unitType: 1intruder
+buildVisibility: shown
+squareSprite: false
+alwaysUnlocked: true
+research: {
+root: true
+name: "Aserie"
+requiresUnlock: false
+planet: aserie
+}
+requirements: [
+    nanometal/800
+    electrocell/500
+]

@@ -1,0 +1,74 @@
+type: ItemTurret
+liquidCapacity: 25
+size: 3
+heatRequirement: 2
+maxHeatEfficiency: 8
+outlineColor: 000907
+range: 325
+health: 5000
+reload: 260
+recoil: 3.2
+predictTarget: false
+inaccuracy: 5
+unitSort: weakest
+drawer: {
+    type: DrawTurret
+    basePrefix: nano-
+}
+shootSound: missileLaunch
+shoot: {
+  type: ShootMulti
+  source: ShootAlternate
+  dest: [
+    {
+      type: ShootBarrel
+      shots: 3
+      barrels: [
+        0, 0, 0,
+        6, 2, 0,
+        -6, 2, 0,
+      ]
+    }
+  ]
+}
+ammoPerShot: 3
+ammoTypes: {
+w-c: {
+    ammoMultiplier: 12
+    reloadMultiplier: 0.75
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    instantDisappear: true
+    damage: 0
+    buildingDamageMultiplier: 0
+    spawnUnit: nanomissle
+  }
+  t-m: {
+    ammoMultiplier: 24
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    instantDisappear: true
+    damage: 0
+    buildingDamageMultiplier: 0
+    spawnUnit: nanomissle-tm
+  }
+}
+coolantMultiplier: 10
+consumes: {
+  coolant: {
+    amount: 1.2
+  }
+}
+maxAmmo: 30
+category: turret
+research: t2-rupture
+requirements: [
+  nanometal/350
+  electrocell/25
+  w-c/100
+]
+researchCost: [
+  w-c/300
+  nanometal/400
+  electrocell/200
+]

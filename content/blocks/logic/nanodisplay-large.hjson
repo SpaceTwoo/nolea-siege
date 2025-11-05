@@ -1,0 +1,6 @@
+type: LogicDisplay
+size: 6
+requirements: [ "nanometal/300", "electrocell/150"]
+displaySize: 176
+category: logic
+research: "nanodisplay"

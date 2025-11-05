@@ -1,0 +1,37 @@
+type: UnitFactory
+size: 3
+health: 2500
+plans: [
+  {
+    unit: knifer
+    time: 2020
+    requirements: [
+      nanometal/50
+    ]
+  }
+  {
+    unit: slimed
+    time: 2550
+    requirements: [
+      nanometal/35
+    ]
+  }
+  {
+    unit: phantom-fake
+    time: 1820
+    requirements: [
+      nanometal/150
+    ]
+  }
+  {
+    unit: miasma
+    time: 2300
+    requirements: [
+      nanometal/20
+    ]
+  }
+]
+requirements: [
+  nanometal/100
+]
+category: units
